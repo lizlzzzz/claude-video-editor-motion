@@ -1,0 +1,22 @@
+{
+  "name": "claude-video-editor-motion",
+  "version": "1.0.0",
+  "description": "Remotion recreation of a 30-second hand-drawn 2D motion graphics animation: Claude mascot editing a short video in a playful timeline UI.",
+  "private": false,
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render src/index.ts ClaudeEditorMotion out/claude-editor-motion.mp4",
+    "still": "remotion still src/index.ts ClaudeEditorMotion",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.242",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.242"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "typescript": "^5.7.2"
+  }
+}
